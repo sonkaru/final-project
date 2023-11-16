@@ -20,9 +20,10 @@ body {
 }
 .content-box {
   width: 60%;
-  height: 40%;
+  height: 60%;
   display: flex;
   flex-direction: column;
+  margin-right: 100px;
 }
 .explanation-div {
   flex: 1;
@@ -32,28 +33,34 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .explanation-div p {
   flex: 1;
 }
-.logo-div {
-  flex: 1;
+.logo-div img {
+  width: 250px;
 }
 .icons-div {
   display: flex;
   flex: 1;
+  flex-direction: row;
+  gap: 20px;
+  padding-left: 20px;
 }
 /* 这些是right-side */
 .right-side-box {
+  margin-left: 100px;
   width: 80%;
   height: 70%;
   display: flex;
   flex-direction: column;
+  gap: 70px;
 }
 .content-right {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 }
 .upper-content {
@@ -89,4 +96,15 @@ body {
   background-color: rgba(0, 0, 0, 0.23);
   color: white;
   border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.down-content div:hover {
+  background-color: rgba(0, 0, 0, 0.48);
+  transition: 0.5s;
 }
