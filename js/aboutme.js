@@ -18,3 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     return num < 10 ? "0" + num : num;
   }
 });
+let directCalc = document.querySelector(".calculator-div");
+directCalc.addEventListener("click", () => {
+  window.location.href = "/html/small-apps/calculator.html";
+});
