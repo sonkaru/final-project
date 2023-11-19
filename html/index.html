@@ -119,6 +119,28 @@
         display: flex;
         flex-direction: column;
       }
+      .card-third {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        gap: 30px;
+      }
+      .card-third div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .card-third div p {
+        font-size: 12px;
+        font-weight: bold;
+      }
+      .second-text {
+        font-size: 16px;
+        font-weight: 100;
+        color: #747474;
+      }
     </style>
   </head>
   <body>
@@ -284,8 +306,32 @@
               </div>
               <hr />
 
-              <div class="card-third"></div>
-              <div class="card-fourth"></div>
+              <div class="card-third">
+                <div>
+                  <p>university</p>
+                  <p class="second-text">AITU</p>
+                </div>
+                <div>
+                  <p>city</p>
+                  <p class="second-text">ASTANA</p>
+                </div>
+                <div>
+                  <p>grade</p>
+                  <p class="second-text">'25 graduate</p>
+                </div>
+              </div>
+              <hr />
+              <div
+                class="card-fourth"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin-top: 30px;
+                "
+              >
+                <button class="shimmer">contact me</button>
+              </div>
             </div>
           </div>
         </div>
@@ -297,7 +343,7 @@
       const body = document.body;
 
       modeSwitchButton.addEventListener("click", () => {
-        html.classList.toggle("light-mode");
+        body.classList.add("light");
       });
     </script>
   </body>
