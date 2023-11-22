@@ -4,7 +4,7 @@
   padding: 0;
 }
 body {
-  background-color: #02162b;
+  background-color: var(--bg-color);
   font-family: Arial, sans-serif;
   margin-bottom: 3000px;
 }
@@ -278,4 +278,63 @@ body {
 }
 .created-project-text {
   font-weight: 600;
+}
+.border-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  color: var(--bg-color-white);
+  font-size: 16px;
+  font-weight: bold;
+}
+.main-third-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: var(--bg-color-blue);
+  color: var(--bg-color-white);
+  width: 100%;
+  height: 130px;
+  border-radius: 30px;
+}
+.main-fourth-div {
+  width: 100%;
+  height: 380px;
+  background-image: url(/logo-img/wallhaven-rrezx7_1920x1080.png);
+  overflow: hidden;
+  object-fit: cover;
+}
+.main-fifth-div {
+  width: 100%;
+  height: 540px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 40px;
+}
+.main-fifth-div div {
+  background-color: var(--bg-color-blue);
+  border-radius: 10px;
+}
+.fifth-content {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.order-button {
+  background-color: transparent;
+  font-size: 16px;
+  border: none;
+  color: #ff8181;
 }
