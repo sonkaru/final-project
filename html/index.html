@@ -7,433 +7,478 @@
     <link rel="stylesheet" href="/css/lightmode.css" />
   </head>
   <body>
-    <div class="navbar-wrapper">
-      <div class="nav-bar">
-        <div class="nav-bar-left">
-          <div class="go-home-logo">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-arrow-return-left"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"
-              />
-            </svg>
+    <div class="front">
+      <div class="navbar-wrapper">
+        <div class="nav-bar">
+          <div class="nav-bar-left">
+            <div class="go-home-logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-return-left"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"
+                />
+              </svg>
+            </div>
+            <div>my information</div>
           </div>
-          <div>my information</div>
+          <div class="nav-bar-right">
+            <div class="container">Main-page</div>
+            <div class="container">projects</div>
+            <div class="container">experience</div>
+            <div class="container">contact</div>
+            <div class="container">small-apps</div>
+            <div class="container"><button id="mode-switch">hi</button></div>
+          </div>
         </div>
-        <div class="nav-bar-right">
-          <div class="container">Main-page</div>
-          <div class="container">projects</div>
-          <div class="container">experience</div>
-          <div class="container">contact</div>
-          <div class="container">small-apps</div>
-          <div class="container"><button id="mode-switch">hi</button></div>
-        </div>
+        <div class="navbar-shadow"></div>
       </div>
-      <div class="navbar-shadow"></div>
-    </div>
-    <div class="invisible-container"></div>
-    <div class="body-container">
-      <div class="wrapper">
-        <div class="layout-default">
-          <div class="layout-default-bar">
-            <div class="card-wrapper">
-              <div class="smallcard"></div>
-              <div class="card">
-                <div
-                  class="card-first"
-                  style="
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 20px;
-                  "
-                >
-                  <img
-                    class="shimmer"
-                    src="/logo-img/v2-7046af4f9677fdc7627e5cc3628f7062_1440w.webp"
-                    alt=""
+      <div class="invisible-container"></div>
+      <div class="body-container">
+        <div class="wrapper">
+          <div class="layout-default">
+            <div class="layout-default-bar">
+              <div class="card-wrapper">
+                <div class="smallcard"></div>
+                <div class="card">
+                  <div
+                    class="card-first"
                     style="
-                      width: 100px;
-                      border-radius: 50%;
-                      border-style: solid;
-                      border-color: #fff;
-                    "
-                  />
-                  <p style="font-size: 24px; font-weight: bold">
-                    Sunkar's resume
-                  </p>
-                  <p
-                    style="
-                      font-size: 12px;
-                      font-weight: 100;
-                      margin-bottom: 20px;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                      align-items: center;
+                      gap: 20px;
                     "
                   >
-                    actually，my dream is peace
-                  </p>
-                </div>
-                <hr />
-
-                <div
-                  class="card-second"
-                  style="
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 20px;
-                    width: 100%;
-                    height: 100px;
-                  "
-                >
-                  <a href="https://github.com/sonkaru">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      style="color: white"
-                      class="bi bi-github"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-                      />
-                    </svg>
-                  </a>
-                  <a href="">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      style="color: white"
-                      class="bi bi-instagram"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-                      />
-                    </svg>
-                  </a>
-
-                  <a href="#">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      style="color: white"
-                      class="bi bi-youtube"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
-                      />
-                    </svg>
-                  </a>
-                  <a href="#"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      style="color: white"
-                      class="bi bi-wechat"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M11.176 14.429c-2.665 0-4.826-1.8-4.826-4.018 0-2.22 2.159-4.02 4.824-4.02S16 8.191 16 10.411c0 1.21-.65 2.301-1.666 3.036a.324.324 0 0 0-.12.366l.218.81a.616.616 0 0 1 .029.117.166.166 0 0 1-.162.162.177.177 0 0 1-.092-.03l-1.057-.61a.519.519 0 0 0-.256-.074.509.509 0 0 0-.142.021 5.668 5.668 0 0 1-1.576.22ZM9.064 9.542a.647.647 0 1 0 .557-1 .645.645 0 0 0-.646.647.615.615 0 0 0 .09.353Zm3.232.001a.646.646 0 1 0 .546-1 .645.645 0 0 0-.644.644.627.627 0 0 0 .098.356Z"
-                      />
-                      <path
-                        d="M0 6.826c0 1.455.781 2.765 2.001 3.656a.385.385 0 0 1 .143.439l-.161.6-.1.373a.499.499 0 0 0-.032.14.192.192 0 0 0 .193.193c.039 0 .077-.01.111-.029l1.268-.733a.622.622 0 0 1 .308-.088c.058 0 .116.009.171.025a6.83 6.83 0 0 0 1.625.26 4.45 4.45 0 0 1-.177-1.251c0-2.936 2.785-5.02 5.824-5.02.05 0 .1 0 .15.002C10.587 3.429 8.392 2 5.796 2 2.596 2 0 4.16 0 6.826Zm4.632-1.555a.77.77 0 1 1-1.54 0 .77.77 0 0 1 1.54 0Zm3.875 0a.77.77 0 1 1-1.54 0 .77.77 0 0 1 1.54 0Z"
-                      />
-                    </svg>
-                  </a>
-                </div>
-                <hr />
-
-                <div class="card-third">
-                  <div>
-                    <p>university</p>
-                    <p class="second-text">AITU</p>
-                  </div>
-                  <div>
-                    <p>city</p>
-                    <p class="second-text">ASTANA</p>
-                  </div>
-                  <div>
-                    <p>grade</p>
-                    <p class="second-text">'25 graduate</p>
-                  </div>
-                </div>
-                <hr />
-                <div
-                  class="card-fourth"
-                  style="
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin-top: 30px;
-                  "
-                >
-                  <button class="shimmer">contact me</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="layout-default-main">
-            <div class="main-first-div">
-              <p>HI MY NEW FRIEND</p>
-              <h1
-                style="
-                  font-size: 56px;
-                  font-family: Arial, Helvetica, sans-serif;
-                  font-weight: 400;
-                "
-              >
-                Hello
-              </h1>
-              <h1
-                style="
-                  font-size: 56px;
-                  font-family: Arial, Helvetica, sans-serif;
-                  font-weight: 600;
-                "
-              >
-                I'm Sunkar
-              </h1>
-              <button class="sub-title-btn animated-btn">
-                ABOUT ME
-                <span class="animation-swing"
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="11"
-                    height="11"
-                    fill="currentColor"
-                    class="bi bi-caret-right-fill"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                    <img
+                      class="shimmer"
+                      src="/logo-img/v2-7046af4f9677fdc7627e5cc3628f7062_1440w.webp"
+                      alt=""
+                      style="
+                        width: 100px;
+                        border-radius: 50%;
+                        border-style: solid;
+                        border-color: #fff;
+                      "
                     />
-                  </svg>
-                </span>
-              </button>
-            </div>
-            <div class="main-second-div">
-              <div class="number-create-wrapper">
-                <div class="smallcard"></div>
-                <div class="number-create-div">
-                  <div class="number-icon">
-                    <p>3</p>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      fill="#ff8181"
-                      class="bi bi-plus"
-                      viewBox="0 0 16 16"
+                    <p style="font-size: 24px; font-weight: bold">
+                      Sunkar's resume
+                    </p>
+                    <p
+                      style="
+                        font-size: 12px;
+                        font-weight: 100;
+                        margin-bottom: 20px;
+                      "
                     >
-                      <path
-                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
-                      />
-                    </svg>
+                      actually，my dream is peace
+                    </p>
                   </div>
-                  <p>- - - - - - - - - - - - - - - - - -</p>
-                  <p class="created-project-text">CREATED PROJECTS</p>
-                </div>
-              </div>
+                  <hr />
 
-              <div class="number-create-wrapper">
-                <div class="smallcard"></div>
-                <div class="number-create-div">
-                  <div class="number-icon">
-                    <p>2</p>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      fill="#ff8181"
-                      class="bi bi-plus"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
-                      />
-                    </svg>
-                  </div>
-                  <p>- - - - - - - - - - - - - - - - - -</p>
-                  <p class="created-project-text">TEAM PROJECTS</p>
-                </div>
-              </div>
-              <div class="number-create-wrapper">
-                <div class="smallcard"></div>
-                <div class="number-create-div">
-                  <div class="number-icon">
-                    <p>0</p>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      fill="#ff8181"
-                      class="bi bi-plus"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
-                      />
-                    </svg>
-                  </div>
-                  <p>- - - - - - - - - - - - - - - - - -</p>
-                  <p class="created-project-text">PRICES</p>
-                </div>
-              </div>
-            </div>
-            <div class="border-div">
-              <p style="font-size: 16px">MY STORIES</p>
-              <p class="line">
-                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-                - - - - - - - - - - - - -
-              </p>
-              01
-            </div>
-            <div class="main-third-div">
-              <div
-                style="
-                  display: flex;
-                  flex-direction: row;
-                  justify-content: start !important;
-                  font-size: 40px;
-                  color: #ff8181;
-                  margin-left: 30px;
-                "
-              >
-                "
-              </div>
-              <p>
-                I hope I could keep advancing and let my life shine as a
-                precious stone.and make my parents proud.
-              </p>
-              <div
-                style="
-                  display: flex;
-                  flex-direction: row;
-                  justify-content: end !important;
-                  font-size: 40px;
-                  color: #ff8181;
-                  margin-right: 30px;
-                "
-                ;
-              >
-                "
-              </div>
-            </div>
-            <div class="border-div">
-              <p style="font-size: 16px">MY STORIES</p>
-              <p class="line">
-                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-                - - - - - - - - - - - - -
-              </p>
-              01
-            </div>
-            <div class="main-fourth-div"></div>
-            <div class="border-div">
-              <p style="font-size: 16px">MY STORIES</p>
-              <p class="line">
-                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-                - - - - - - - - - - - - -
-              </p>
-              01
-            </div>
-            <div class="main-fifth-div">
-              <div>
-                <div class="fifth-content">
-                  <svg
-                    t="1649230330671"
-                    class="icon"
-                    viewBox="0 0 1024 1024"
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    p-id="1638"
-                    width="40"
-                    height="40"
+                  <div
+                    class="card-second"
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: center;
+                      align-items: center;
+                      gap: 20px;
+                      width: 100%;
+                      height: 100px;
+                    "
                   >
-                    <path
-                      d="M488.96 506.88h40.96v307.2h-40.96zM803.84 737.28h-97.28c-45.056 0-81.92-36.864-81.92-81.92V502.272h40.96V655.36c0 22.528 18.432 40.96 40.96 40.96h97.28v40.96zM312.32 737.28H215.04v-40.96h97.28c22.528 0 40.96-18.432 40.96-40.96V502.272h40.96V655.36c0 45.056-36.864 81.92-81.92 81.92z"
-                      fill="#254665"
-                      p-id="1639"
-                    ></path>
-                    <path
-                      d="M509.44 942.08c-46.592 0-84.48-37.888-84.48-84.48S462.848 773.12 509.44 773.12s84.48 37.888 84.48 84.48-37.888 84.48-84.48 84.48z m0-128c-24.064 0-43.52 19.456-43.52 43.52s19.456 43.52 43.52 43.52 43.52-19.456 43.52-43.52-19.456-43.52-43.52-43.52zM171.52 798.72c-46.592 0-84.48-37.888-84.48-84.48S124.928 629.76 171.52 629.76 256 667.648 256 714.24 218.112 798.72 171.52 798.72z m0-128c-24.064 0-43.52 19.456-43.52 43.52s19.456 43.52 43.52 43.52 43.52-19.456 43.52-43.52-19.456-43.52-43.52-43.52zM847.36 798.72c-46.592 0-84.48-37.888-84.48-84.48s37.888-84.48 84.48-84.48 84.48 37.888 84.48 84.48-37.888 84.48-84.48 84.48z m0-128c-24.064 0-43.52 19.456-43.52 43.52s19.456 43.52 43.52 43.52 43.52-19.456 43.52-43.52-19.456-43.52-43.52-43.52z"
-                      fill="#254665"
-                      p-id="1640"
-                    ></path>
-                    <path
-                      d="M683.52 543.232H319.488c-90.112 0-163.328-73.216-163.328-163.328 0-90.112 73.216-163.328 163.328-163.328h7.68C344.064 138.752 413.696 81.92 495.616 81.92c69.632 0 132.608 42.496 159.232 105.472 9.728-1.536 19.456-2.56 29.184-2.56 98.816 0 179.2 80.384 179.2 179.2-0.512 98.816-80.896 179.2-179.712 179.2zM319.488 258.048c-67.584 0-122.368 54.784-122.368 122.368s54.784 122.368 122.368 122.368h364.544c76.288 0 138.24-61.952 138.24-138.24s-61.952-138.24-138.24-138.24c-12.288 0-24.576 1.536-36.864 5.12l-19.456 5.12-5.632-18.944C605.696 161.792 553.472 122.88 495.616 122.88c-68.096 0-124.416 51.2-131.584 118.784l-2.048 22.016-21.504-3.584c-7.168-1.536-14.336-2.048-20.992-2.048z"
-                      fill="#254665"
-                      p-id="1641"
-                    ></path>
-                    <path
-                      d="M655.36 640H307.2V424.96c0-33.792 27.648-61.44 61.44-61.44h348.16v215.04c0 33.792-27.648 61.44-61.44 61.44z"
-                      fill="#254665"
-                      opacity=".18"
-                      p-id="1642"
-                    ></path>
-                  </svg>
-                  <p>UI Design</p>
-                  <div class="fifth-text-div">
-                    <p></p>
-                    <p></p>
-                  </div>
-                  <button class="order-button animated-btn">
-                    ORDER NOW
-                    <span class="animation-swing"
-                      ><svg
+                    <a href="https://github.com/sonkaru">
+                      <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="11"
-                        height="11"
+                        width="16"
+                        height="16"
                         fill="currentColor"
-                        class="bi bi-caret-right-fill"
+                        style="color: white"
+                        class="bi bi-github"
                         viewBox="0 0 16 16"
                       >
                         <path
-                          d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
                         />
                       </svg>
-                    </span>
-                  </button>
+                    </a>
+                    <a href="">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        style="color: white"
+                        class="bi bi-instagram"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                        />
+                      </svg>
+                    </a>
+
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        style="color: white"
+                        class="bi bi-youtube"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+                        />
+                      </svg>
+                    </a>
+                    <a href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        style="color: white"
+                        class="bi bi-wechat"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M11.176 14.429c-2.665 0-4.826-1.8-4.826-4.018 0-2.22 2.159-4.02 4.824-4.02S16 8.191 16 10.411c0 1.21-.65 2.301-1.666 3.036a.324.324 0 0 0-.12.366l.218.81a.616.616 0 0 1 .029.117.166.166 0 0 1-.162.162.177.177 0 0 1-.092-.03l-1.057-.61a.519.519 0 0 0-.256-.074.509.509 0 0 0-.142.021 5.668 5.668 0 0 1-1.576.22ZM9.064 9.542a.647.647 0 1 0 .557-1 .645.645 0 0 0-.646.647.615.615 0 0 0 .09.353Zm3.232.001a.646.646 0 1 0 .546-1 .645.645 0 0 0-.644.644.627.627 0 0 0 .098.356Z"
+                        />
+                        <path
+                          d="M0 6.826c0 1.455.781 2.765 2.001 3.656a.385.385 0 0 1 .143.439l-.161.6-.1.373a.499.499 0 0 0-.032.14.192.192 0 0 0 .193.193c.039 0 .077-.01.111-.029l1.268-.733a.622.622 0 0 1 .308-.088c.058 0 .116.009.171.025a6.83 6.83 0 0 0 1.625.26 4.45 4.45 0 0 1-.177-1.251c0-2.936 2.785-5.02 5.824-5.02.05 0 .1 0 .15.002C10.587 3.429 8.392 2 5.796 2 2.596 2 0 4.16 0 6.826Zm4.632-1.555a.77.77 0 1 1-1.54 0 .77.77 0 0 1 1.54 0Zm3.875 0a.77.77 0 1 1-1.54 0 .77.77 0 0 1 1.54 0Z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <hr />
+
+                  <div class="card-third">
+                    <div>
+                      <p>university</p>
+                      <p class="second-text">AITU</p>
+                    </div>
+                    <div>
+                      <p>city</p>
+                      <p class="second-text">ASTANA</p>
+                    </div>
+                    <div>
+                      <p>grade</p>
+                      <p class="second-text">'25 graduate</p>
+                    </div>
+                  </div>
+                  <hr />
+                  <div
+                    class="card-fourth"
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      margin-top: 30px;
+                    "
+                  >
+                    <button class="shimmer">contact me</button>
+                  </div>
                 </div>
               </div>
-              <div></div>
-              <div></div>
-              <div></div>
             </div>
-            <div
-              style="
-                width: 100%;
-                height: 1800px;
-                background-color: var(--bg-color-blue);
-              "
-            ></div>
+            <div class="layout-default-main">
+              <div class="main-first-div">
+                <p>HI MY NEW FRIEND</p>
+                <h1
+                  style="
+                    font-size: 56px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: 400;
+                  "
+                >
+                  Hello
+                </h1>
+                <h1
+                  style="
+                    font-size: 56px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: 600;
+                  "
+                >
+                  I'm Sunkar
+                </h1>
+                <button class="sub-title-btn animated-btn">
+                  ABOUT ME
+                  <span class="animation-swing"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="11"
+                      height="11"
+                      fill="currentColor"
+                      class="bi bi-caret-right-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <div class="main-second-div">
+                <div class="number-create-wrapper">
+                  <div class="smallcard"></div>
+                  <div class="number-create-div">
+                    <div class="number-icon">
+                      <p>3</p>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="#ff8181"
+                        class="bi bi-plus"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                        />
+                      </svg>
+                    </div>
+                    <p>- - - - - - - - - - - - - - - - - -</p>
+                    <p class="created-project-text">CREATED PROJECTS</p>
+                  </div>
+                </div>
+
+                <div class="number-create-wrapper">
+                  <div class="smallcard"></div>
+                  <div class="number-create-div">
+                    <div class="number-icon">
+                      <p>2</p>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="#ff8181"
+                        class="bi bi-plus"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                        />
+                      </svg>
+                    </div>
+                    <p>- - - - - - - - - - - - - - - - - -</p>
+                    <p class="created-project-text">TEAM PROJECTS</p>
+                  </div>
+                </div>
+                <div class="number-create-wrapper">
+                  <div class="smallcard"></div>
+                  <div class="number-create-div">
+                    <div class="number-icon">
+                      <p>0</p>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="#ff8181"
+                        class="bi bi-plus"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                        />
+                      </svg>
+                    </div>
+                    <p>- - - - - - - - - - - - - - - - - -</p>
+                    <p class="created-project-text">PRICES</p>
+                  </div>
+                </div>
+              </div>
+              <div class="border-div">
+                <p style="font-size: 16px">MY STORIES</p>
+                <p class="line">
+                  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                  - - - - - - - - - - - - - - -
+                </p>
+                01
+              </div>
+              <div class="main-third-div">
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: start !important;
+                    font-size: 40px;
+                    color: #ff8181;
+                    margin-left: 30px;
+                  "
+                >
+                  "
+                </div>
+                <p>
+                  I hope I could keep advancing and let my life shine as a
+                  precious stone.and make my parents proud.
+                </p>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: end !important;
+                    font-size: 40px;
+                    color: #ff8181;
+                    margin-right: 30px;
+                  "
+                  ;
+                >
+                  "
+                </div>
+              </div>
+              <div class="border-div">
+                <p style="font-size: 16px">MY STORIES</p>
+                <p class="line">
+                  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                  - - - - - - - - - - - - - - -
+                </p>
+                01
+              </div>
+              <div class="main-fourth-div"></div>
+              <div class="border-div">
+                <p style="font-size: 16px">MY STORIES</p>
+                <p class="line">
+                  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                  - - - - - - - - - - - - - - -
+                </p>
+                01
+              </div>
+              <div class="main-fifth-div">
+                <div>
+                  <div class="fifth-content">
+                    <svg
+                      t="1649230330671"
+                      class="icon"
+                      viewBox="0 0 1024 1024"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      p-id="1638"
+                      width="40"
+                      height="40"
+                    >
+                      <path
+                        d="M488.96 506.88h40.96v307.2h-40.96zM803.84 737.28h-97.28c-45.056 0-81.92-36.864-81.92-81.92V502.272h40.96V655.36c0 22.528 18.432 40.96 40.96 40.96h97.28v40.96zM312.32 737.28H215.04v-40.96h97.28c22.528 0 40.96-18.432 40.96-40.96V502.272h40.96V655.36c0 45.056-36.864 81.92-81.92 81.92z"
+                        fill="#254665"
+                        p-id="1639"
+                      ></path>
+                      <path
+                        d="M509.44 942.08c-46.592 0-84.48-37.888-84.48-84.48S462.848 773.12 509.44 773.12s84.48 37.888 84.48 84.48-37.888 84.48-84.48 84.48z m0-128c-24.064 0-43.52 19.456-43.52 43.52s19.456 43.52 43.52 43.52 43.52-19.456 43.52-43.52-19.456-43.52-43.52-43.52zM171.52 798.72c-46.592 0-84.48-37.888-84.48-84.48S124.928 629.76 171.52 629.76 256 667.648 256 714.24 218.112 798.72 171.52 798.72z m0-128c-24.064 0-43.52 19.456-43.52 43.52s19.456 43.52 43.52 43.52 43.52-19.456 43.52-43.52-19.456-43.52-43.52-43.52zM847.36 798.72c-46.592 0-84.48-37.888-84.48-84.48s37.888-84.48 84.48-84.48 84.48 37.888 84.48 84.48-37.888 84.48-84.48 84.48z m0-128c-24.064 0-43.52 19.456-43.52 43.52s19.456 43.52 43.52 43.52 43.52-19.456 43.52-43.52-19.456-43.52-43.52-43.52z"
+                        fill="#254665"
+                        p-id="1640"
+                      ></path>
+                      <path
+                        d="M683.52 543.232H319.488c-90.112 0-163.328-73.216-163.328-163.328 0-90.112 73.216-163.328 163.328-163.328h7.68C344.064 138.752 413.696 81.92 495.616 81.92c69.632 0 132.608 42.496 159.232 105.472 9.728-1.536 19.456-2.56 29.184-2.56 98.816 0 179.2 80.384 179.2 179.2-0.512 98.816-80.896 179.2-179.712 179.2zM319.488 258.048c-67.584 0-122.368 54.784-122.368 122.368s54.784 122.368 122.368 122.368h364.544c76.288 0 138.24-61.952 138.24-138.24s-61.952-138.24-138.24-138.24c-12.288 0-24.576 1.536-36.864 5.12l-19.456 5.12-5.632-18.944C605.696 161.792 553.472 122.88 495.616 122.88c-68.096 0-124.416 51.2-131.584 118.784l-2.048 22.016-21.504-3.584c-7.168-1.536-14.336-2.048-20.992-2.048z"
+                        fill="#254665"
+                        p-id="1641"
+                      ></path>
+                      <path
+                        d="M655.36 640H307.2V424.96c0-33.792 27.648-61.44 61.44-61.44h348.16v215.04c0 33.792-27.648 61.44-61.44 61.44z"
+                        fill="#254665"
+                        opacity=".18"
+                        p-id="1642"
+                      ></path>
+                    </svg>
+                    <p>UI Design</p>
+                    <div class="fifth-text-div">
+                      <p></p>
+                      <p></p>
+                    </div>
+                    <button class="order-button animated-btn">
+                      ORDER NOW
+                      <span class="animation-swing"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="11"
+                          height="11"
+                          fill="currentColor"
+                          class="bi bi-caret-right-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div
+                style="
+                  width: 100%;
+                  height: 1800px;
+                  background-color: var(--bg-color-blue);
+                "
+              ></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <canvas></canvas>
 
     <script>
+      const circles = [];
+      let ctx = null;
+      class Circle {
+        generate() {
+          const minX = -window.innerWidth,
+            maxX = 0;
+          const minY = -window.innerHeight,
+            maxY = 0;
+          this.x = getRandomInt(minX, maxX);
+          this.y = getRandomInt(minY, maxY);
+          this.speed = getRandomInt(5, 12);
+          this.radius = getRandomInt(2, 5);
+          this.color = `rgba(255, 255, 255, ${Math.random()})`;
+        }
+        constructor() {
+          this.x = 0;
+          this.y = 0;
+          this.speed = 0;
+          this.radius = 0;
+          this.color = `rgba(255, 255, 255, ${Math.random()})`;
+
+          this.generate();
+        }
+
+        update() {
+          this.x += this.speed;
+          this.y += this.speed;
+
+          if (this.x > window.innerWidth && this.y > window.innerHeight) {
+            this.generate();
+          }
+          this.draw();
+        }
+
+        draw() {
+          if (!ctx) return;
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+          ctx.fillStyle = this.color;
+          ctx.fill();
+        }
+      }
       document.addEventListener("DOMContentLoaded", function (event) {
         const modeSwitchButton = document.getElementById("mode-switch");
         if (modeSwitchButton) {
@@ -441,7 +486,37 @@
             document.body.classList.toggle("light");
           });
         }
+
+        renderSnow();
       });
+
+      function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      function renderSnow() {
+        const canvas = document.querySelector("canvas");
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        ctx = canvas.getContext("2d");
+
+        for (let i = 0; i < 44; i++) {
+          const newCircle = new Circle();
+          circles.push(newCircle);
+        }
+
+        requestAnimationFrame(tick);
+      }
+      function tick() {
+        // 60 FPS
+        ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+        for (let circle of circles) {
+          circle.update();
+        }
+        requestAnimationFrame(tick);
+      }
     </script>
   </body>
 </html>
