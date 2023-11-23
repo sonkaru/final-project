@@ -1,15 +1,18 @@
 * {
-  --bg-color-black: #000;
-  --bg-color-white: #fff;
-  --bg-color-blue: #00283a;
-  --bg-color: #02162b;
+  --bgg-color-font: #fff;
+
+  --bgg-color-blue: #00283a;
+  --bgg-color: #02162b;
 }
 .light * {
   /* OVERWRITING EXISTING VARS WITH NEW VALUES */
-  --bg-color-black-34: rgba(255, 255, 255, 0.342);
-  --bg-color-white: #fff;
-  --bg-color-blue: #ff8181;
-  --bg-color: #f4f5f7;
+  --bgg-color-font: #00283a;
+
+  --bgg-color-blue: #fff;
+  --bgg-color: #f4f5f7;
+  .body-container::after {
+    background-image: url(/mountain2.jpg);
+  }
 }
 
 .shimmer {
