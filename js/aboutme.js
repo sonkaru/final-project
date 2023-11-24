@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const formattedTime =
       padNumber(hours) + ":" + padNumber(minutes) + ":" + padNumber(seconds);
-    currentTimeElement.textContent = "current time:" + formattedTime;
+    currentTimeElement.textContent = formattedTime;
   }
 
   function padNumber(num) {
