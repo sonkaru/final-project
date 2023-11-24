@@ -24,7 +24,7 @@ directCalc.addEventListener("click", () => {
 });
 let directMain = document.querySelector(".home-div");
 directMain.addEventListener("click", () => {
-  window.location.href = "/index.html";
+  window.location.href = "/html/index.html";
 });
 let directTodo = document.querySelector(".todo-list-div");
 directTodo.addEventListener("click", () => {

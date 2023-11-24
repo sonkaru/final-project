@@ -4,7 +4,7 @@ smallAppPage.addEventListener("click", () => {
 });
 let mainPage = document.querySelector(".main-page-container");
 mainPage.addEventListener("click", () => {
-  window.location = "/index.html";
+  window.location = "/html/index.html";
 });
 let lifePage = document.querySelector(".life-container");
 lifePage.addEventListener("click", () => {
