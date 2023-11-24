@@ -262,7 +262,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.number-create-wrapper {
+.git-wrapper {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -426,7 +426,7 @@ canvas {
 .third-content-div input {
   width: 85%;
   height: 30px;
-  border: none;
+  border-color: var(--bgg-color-font);
   border-radius: 20px;
 }
 .third-content-div input::placeholder {

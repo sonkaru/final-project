@@ -63,16 +63,27 @@ function getRandomInt(min, max) {
 
 function renderSnow() {
   const canvas = document.querySelector("canvas");
+  if (!canvas) return;
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
   ctx = canvas.getContext("2d");
 
-  for (let i = 0; i < 200; i++) {
+  circles.splice(0, circles.length);
+  let circlesQtty = Math.floor(window.innerWidth / 100);
+  for (let i = 0; i < circlesQtty; i++) {
     const newCircle = new Circle();
     circles.push(newCircle);
   }
 
   requestAnimationFrame(tick);
+}
+
+window.addEventListener("resize", () => {
+  onWindowResize();
+});
+
+function onWindowResize() {
+  renderSnow();
 }
 function tick() {
   // 60 FPS
@@ -82,3 +93,16 @@ function tick() {
   }
   requestAnimationFrame(tick);
 }
+
+$(document).ready(function () {
+  // 当按钮被点击时触发滚动
+  $("#scrollButton").on("click", function () {
+    // 使用 animate 方法滚动到目标 div 的位置
+    $("html, body").animate(
+      {
+        scrollTop: $("#targetDiv").offset().top,
+      },
+      100
+    );
+  });
+});

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/index.css" />
     <link rel="stylesheet" href="/css/contact.css">
     <link rel="stylesheet" href="/css/lightmode.css" />
     <link
@@ -11,6 +12,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   </head>
   <body>
     <div class="front">
@@ -265,7 +267,7 @@
                 >
                   I'm Sunkar
                 </h1>
-                <button class="sub-title-btn animated-btn">
+                <button id="scrollButton" class="sub-title-btn animated-btn">
                   ABOUT ME
                   <span class="animation-swing"
                     ><svg
@@ -283,8 +285,8 @@
                   </span>
                 </button>
               </div>
-              <div class="main-second-div">
-                <div class="number-create-wrapper">
+              <div id="targetDiv" class="main-second-div">
+                <div class="git-wrapper">
                   <div class="smallcard"></div>
                   <div class="number-create-div">
                     <div>
@@ -314,7 +316,7 @@
                   </div>
                 </div>
 
-                <div class="number-create-wrapper">
+                <div class="git-wrapper">
                   <div class="smallcard"></div>
                   <div class="number-create-div">
                     <div>
@@ -335,15 +337,23 @@
                       </a>
                       <p style="color:var(--bgg-color-font);font-weight: bold;margin-bottom: 30px;">github</p>
                       <p style="color: var(--bgg-color-font
-                      ) ;font-style: italic;gap:12px">github:sonkaru</p>
+                      ) ;font-style: italic;gap:12px">gmail:kurmetsunkar0407@gmail.com</p>
                       <p style="color: var(--bgg-color-font);
-                      font-style: italic;">github:sonkaru</p>
+                      font-style: italic;">gmail:kurmetsunkar0407@gmail.com</p>
                     </div>
                     
                  
                   </div>
                 </div>
                 
+              </div>
+              <div class="border-div">
+                <p style="font-size: 16px">contact</p>
+                <p class="line">
+                  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                </p>
+                01
               </div>
              
                 <div class="third-content-div">
@@ -364,8 +374,11 @@
               
              
           </div>
-      </body>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <canvas></canvas>
     <script src="/js/index.js"></script>
     <script src="/js/main.js"></script>
@@ -374,5 +387,22 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      $(document).ready(function () {
+        const video = $("#myVideo")[0];
+        const playPauseBtn = $("#playPauseBtn");
+
+        playPauseBtn.click(function () {
+          if (video.paused) {
+            video.play();
+            playPauseBtn.text("pause");
+          } else {
+            video.pause();
+            playPauseBtn.text("play");
+          }
+        });
+      });
+    </script>
   </body>
 </html>

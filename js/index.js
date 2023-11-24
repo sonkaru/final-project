@@ -4,7 +4,7 @@ smallAppPage.addEventListener("click", () => {
 });
 let mainPage = document.querySelector(".main-page-container");
 mainPage.addEventListener("click", () => {
-  window.location = "/html/index.html";
+  window.location = "/index.html";
 });
 let lifePage = document.querySelector(".life-container");
 lifePage.addEventListener("click", () => {
@@ -14,19 +14,3 @@ let contactPage = document.querySelector(".contact-page-container");
 contactPage.addEventListener("click", () => {
   window.location = "/html/contact.html";
 });
-
-$(document).ready(function () {
-  const video = $("#myVideo")[0];
-  const playPauseBtn = $("#playPauseBtn");
-
-  playPauseBtn.click(function () {
-    if (video.paused) {
-      video.play();
-      playPauseBtn.text("pause");
-    } else {
-      video.pause();
-      playPauseBtn.text("play");
-    }
-  });
-});
-x;
