@@ -113,7 +113,7 @@
                 >
                   I'm Sunkar
                 </h1>
-                <button class="sub-title-btn animated-btn">
+                <button id="scrollButton" class="sub-title-btn animated-btn">
                   ABOUT ME
                   <span class="animation-swing"
                     ><svg
@@ -131,7 +131,7 @@
                   </span>
                 </button>
               </div>
-              <div class="main-second-div">
+              <div id="targetDiv" class="main-second-div">
                 <div class="number-create-wrapper">
                   <div class="smallcard"></div>
                   <div class="number-create-div">
@@ -257,6 +257,7 @@
                 <p class="line">
                   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
                   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
                 </p>
               </div>
               <div
@@ -274,7 +275,7 @@
                 <div
                   style="
                     border-radius: 30px;
-                    background-image: url(/mountain2.jpg);
+                    background-image: url(/logo-img/1.jpg);
                     object-fit: cover;
                     background-size: cover;
                   "
@@ -282,14 +283,14 @@
                 <div
                   style="
                     border-radius: 30px;
-                    background-image: url(/mountain2.jpg);
+                    background-image: url(/logo-img/2.jpg);
                     background-size: cover;
                   "
                 ></div>
                 <div
                   style="
                     border-radius: 30px;
-                    background-image: url(/mountain2.jpg);
+                    background-image: url(/logo-img/3.jpg);
                     object-fit: cover;
                     background-size: cover;
                   "
@@ -297,11 +298,29 @@
                 <div
                   style="
                     border-radius: 30px;
-                    background-image: url(/mountain2.jpg);
+                    background-image: url(/logo-img/4.jpg);
                     object-fit: cover;
                     background-size: cover;
                   "
                 ></div>
+              </div>
+              <div
+                class="foooter"
+                style="
+                  margin-top: 40px;
+                  width: 100%;
+                  height: 100px;
+                  display: flex;
+                  justify-content: start;
+                  align-items: center;
+                  font-style: italic;
+                  color: #747474;
+                  background-color: var(--bgg-color-blue);
+                  border-radius: 30px;
+                  font-size: 20px;
+                "
+              >
+                <p style="margin-left: 100px">@sunkars resume</p>
               </div>
             </div>
           </div>
@@ -335,6 +354,16 @@
       function muteUnmute() {
         audioPlayer.muted = !audioPlayer.muted;
       }
+      $(document).ready(function () {
+        $("#scrollButton").on("click", function () {
+          $("html, body").animate(
+            {
+              scrollTop: $("#targetDiv").offset().top,
+            },
+            100
+          );
+        });
+      });
     </script>
   </body>
 </html>

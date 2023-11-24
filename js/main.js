@@ -95,9 +95,7 @@ function tick() {
 }
 
 $(document).ready(function () {
-  // 当按钮被点击时触发滚动
   $("#scrollButton").on("click", function () {
-    // 使用 animate 方法滚动到目标 div 的位置
     $("html, body").animate(
       {
         scrollTop: $("#targetDiv").offset().top,
