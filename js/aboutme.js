@@ -22,3 +22,15 @@ let directCalc = document.querySelector(".calculator-div");
 directCalc.addEventListener("click", () => {
   window.location.href = "/html/small-apps/calculator.html";
 });
+let directMain = document.querySelector(".home-div");
+directMain.addEventListener("click", () => {
+  window.location.href = "/index.html";
+});
+let directTodo = document.querySelector(".todo-list-div");
+directTodo.addEventListener("click", () => {
+  window.location.href = "/html/small-apps/todolist.html";
+});
+let directRock = document.querySelector(".rock-paper-div");
+directRock.addEventListener("click", () => {
+  window.location.href = "/html/small-apps/rock-paper.html";
+});
