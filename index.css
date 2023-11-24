@@ -417,6 +417,9 @@ canvas {
     flex-direction: column;
     place-items: center;
   }
+  .nav-bar {
+    display: none;
+  }
   .layout-default-bar {
   }
 }
