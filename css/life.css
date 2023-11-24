@@ -291,3 +291,11 @@ canvas {
   top: 0;
   left: 0;
 }
+@media screen and (max-width: 900px) {
+  .layout-default {
+    flex-direction: column;
+    place-items: center;
+  }
+  .layout-default-bar {
+  }
+}

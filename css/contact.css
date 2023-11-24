@@ -435,3 +435,11 @@ canvas {
 .third-content-div textarea {
   width: 85%;
 }
+@media screen and (max-width: 900px) {
+  .layout-default {
+    flex-direction: column;
+    place-items: center;
+  }
+  .layout-default-bar {
+  }
+}

@@ -4,6 +4,8 @@
 }
 body {
   background-image: url(/logo-img/wallhaven-rrezx7_1920x1080.png);
+  object-fit: cover;
+  background-size: cover;
 }
 .container {
   width: 100%;
