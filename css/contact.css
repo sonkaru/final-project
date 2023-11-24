@@ -413,3 +413,25 @@ canvas {
 #mode-switch.active svg path {
   stroke: var(--bgg-color-font);
 }
+.third-content-div {
+  width: 100%;
+  height: 600px;
+  background-color: var(--bgg-color-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.third-content-div input {
+  width: 85%;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+}
+.third-content-div input::placeholder {
+  padding-left: 45px;
+}
+.third-content-div textarea {
+  width: 85%;
+}
