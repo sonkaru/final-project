@@ -374,3 +374,40 @@ canvas {
 
   gap: 20px;
 }
+#mode-switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 10px;
+  background: none;
+  border: none;
+}
+#mode-switch span {
+  display: flex;
+  align-items: center;
+}
+#mode-switch .dot {
+  width: 36px;
+  height: 16px;
+  border-radius: 14px;
+  border: 1px solid var(--bgg-color-font);
+  position: relative;
+}
+#mode-switch .dot::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background-color: #ff8181;
+  display: block;
+  position: absolute;
+  right: 0;
+  transition: 0.5s all;
+}
+#mode-switch.active .dot::after {
+  left: 0;
+}
+#mode-switch.active svg path {
+  stroke: var(--bgg-color-font);
+}

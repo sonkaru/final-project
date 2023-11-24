@@ -3,11 +3,13 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   background-color: var(--bgg-color) !important;
   font-family: Arial, sans-serif;
   margin-bottom: 3000px;
 }
+
 .navbar-wrapper {
   width: 100%;
   height: 78px;
@@ -52,10 +54,17 @@ body {
 .nav-bar-left div {
   height: 100%;
   flex: 1;
-  color: white;
+  color: var(--bgg-color-font);
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
+.nav-bar-right div:hover,
+.nav-bar-left div :hover {
+  opacity: 0.5;
+  transition: 0.8s;
+}
+
 .wrapper {
   display: flex;
   justify-content: center;
@@ -113,7 +122,7 @@ body {
   border-radius: 20px;
   padding: 20px;
   box-sizing: border-box;
-  color: #fff !important;
+  color: var(--bgg-color-font) !important;
 }
 .card::-webkit-scrollbar {
   display: none;
@@ -203,7 +212,7 @@ body {
   background-color: transparent;
   border-radius: 100px;
   border: 1px solid #fff;
-  color: #fff;
+  color: var(--bgg-color-font);
   font-family: Arial, sans-serif;
   font-size: 13px;
   font-weight: 600;
@@ -234,10 +243,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  color: white;
+  color: var(--bgg-color-font);
   margin-bottom: 95px;
 }
 .main-second-div {
+  height: 300px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -260,25 +270,86 @@ body {
   align-items: center;
 }
 .number-create-div {
-  background-color: var(--bgg-color-blue) !important;
+  background-color: var(--bgg-color-blue);
   width: 100%;
   height: 200px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  justify-content: start;
+  padding-left: 20px;
+  padding-top: 20px;
   border-radius: 20px;
 }
 .number-create-div p {
-  color: var(--bgg-color-white);
+  color: var(--bgg-color-font);
 }
 .number-icon p {
   display: inline-block;
-  color: var(--bgg-color-white);
+  color: var(--bgg-color-font);
   font-size: 26px;
 }
 .created-project-text {
   font-weight: 600;
+}
+.border-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  color: var(--bgg-color-font) !important;
+  font-size: 16px;
+  font-weight: bold;
+}
+.main-third-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: var(--bgg-color-blue) !important;
+  color: var(--bgg-color-font) !important;
+  width: 100%;
+  height: 130px;
+  border-radius: 30px;
+}
+.main-fourth-div {
+  width: 100%;
+  height: 380px;
+  /* background-image: url(/logo-img/wallhaven-rrezx7_1920x1080.png); */
+  overflow: hidden;
+  object-fit: cover;
+}
+.main-fifth-div {
+  width: 100%;
+  height: 540px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 40px;
+  margin-bottom: 80px;
+}
+.main-fifth-div div {
+  background-color: var(--bgg-color-blue) !important;
+  border-radius: 10px;
+}
+.fifth-content {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.order-button {
+  background-color: transparent;
+  font-size: 16px;
+  border: none;
+  color: #ff8181;
 }
 
 .front {
@@ -290,4 +361,55 @@ canvas {
   position: fixed;
   top: 0;
   left: 0;
+}
+#videoPlayer {
+  width: 400px;
+  margin: auto;
+  text-align: center;
+}
+.main-sixth-div {
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+  height: 431px;
+
+  gap: 20px;
+}
+#mode-switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 10px;
+  background: none;
+  border: none;
+}
+#mode-switch span {
+  display: flex;
+  align-items: center;
+}
+#mode-switch .dot {
+  width: 36px;
+  height: 16px;
+  border-radius: 14px;
+  border: 1px solid var(--bgg-color-font);
+  position: relative;
+}
+#mode-switch .dot::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background-color: #ff8181;
+  display: block;
+  position: absolute;
+  right: 0;
+  transition: 0.5s all;
+}
+#mode-switch.active .dot::after {
+  left: 0;
+}
+#mode-switch.active svg path {
+  stroke: var(--bgg-color-font);
 }

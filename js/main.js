@@ -44,7 +44,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const modeSwitchButton = document.getElementById("mode-switch");
   if (modeSwitchButton) {
     modeSwitchButton.addEventListener("click", () => {
-      document.body.classList.toggle("light");
+      function modeToggle() {
+        modeSwitchButton.classList.toggle("active");
+        document.documentElement.classList.toggle("light");
+      }
+      setTimeout(modeToggle, 500);
     });
   }
 
